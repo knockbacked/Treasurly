@@ -1,4 +1,4 @@
-# Personal Finance Tracker
+# Treasurly: Personal Finance Tracker
 
 ## 1. Overview
 Many individuals struggle to manage their finances effectively, leading to overspending and limited savings visibility.  
