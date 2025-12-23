@@ -5,6 +5,7 @@ Many individuals struggle to manage their finances effectively, leading to overs
 The **Personal Finance Tracker** is a full-stack web application designed to centralize financial information, automate transaction categorization, and provide users with clear analytics and budgeting insights.  
 It integrates a Spring Boot backend with a React + Vite frontend and a MongoDB Atlas database.
 
+_(This project was completed as part of a university group assignment.)_
 ---
 
 ## 2. System Architecture
@@ -136,17 +137,6 @@ backend/   → Spring Boot REST API + MongoDB integration
   chmod +x ./gradlew
   ```
 
----
-
-## 7. Team Members
-
-| Name                  | Role                      |
-| --------------------- | ------------------------- |
-| Daniel Kostandy       | Developer                 |
-| Elvis Nguyen          | Developer                 |
-| Kanishka Sarkar       | Developer / Scrum Master  |
-| Samiksha Aveg         | Developer / Product Owner |
-| Sharang Sawleshwarkar | Developer                 |
 
 ---
 
