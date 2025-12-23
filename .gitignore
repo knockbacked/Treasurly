@@ -1,0 +1,70 @@
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# node
+node_modules/
+
+# env
+.env
+.env.*
+
+# frontend specific
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+/frontend/.parcel-cache/
+/frontend/.eslintcache
+/frontend/.turbo/
+/frontend/coverage/
+frontend/yarn.lock
+frontend/npm-debug.log
+frontend/pnpm-lock.yaml
+
+# backend specific
+/backend/build/
+/backend/.gradle/
+/backend/out/
+/backend/logs/
+/backend/tmp/
+/backend/.classpath
+/backend/.project
+/backend/.settings/
+/backend/.mvn/
+/backend/mvnw
+/backend/mvnw.cmd
+
+# Gradle Wrapper files (optional if you commit wrapper)
+**/gradle-wrapper.jar
+.gradle/
+/gradlew
+/gradlew.bat
+
+# IntelliJ IDEA specific
+*.iws
+*.ipr
+*.idea/
+
+# Misc
+*.tgz
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+*.bak
+*.tmp
+
+# Logs
+*.log
+*.log.*
+

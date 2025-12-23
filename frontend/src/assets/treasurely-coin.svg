@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="64" viewBox="0 0 260 64" role="img" aria-label="Treasurly logo">
+  <defs>
+    <radialGradient id="coinGlow" cx="30%" cy="25%" r="80%">
+      <stop offset="0%" stop-color="#FFE784" stop-opacity="0.9"></stop>
+      <stop offset="100%" stop-color="#FFD54A" stop-opacity="1"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- Coin icon -->
+  <g transform="translate(8,6)">
+    <circle cx="26" cy="26" r="24" fill="#0B0F19" stroke="#FFD54A" stroke-width="2"></circle>
+    <circle cx="26" cy="26" r="18" fill="url(#coinGlow)" opacity="0.25"></circle>
+    <!-- ridges -->
+    <g stroke="#FFD54A" stroke-opacity="0.6">
+      <circle cx="26" cy="26" r="22" fill="none" stroke-dasharray="2 3"></circle>
+    </g>
+    <!-- T -->
+    <path d="M17 20h18v5h-6v14h-6V25h-6z" fill="#FFD54A"></path>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(74,14)">
+    <text x="0" y="28" fill="#FFFFFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="28" font-weight="600">Treasurly</text>
+    <circle cx="128" cy="32" r="3" fill="#FFD54A"></circle>
+  </g>
+</svg>

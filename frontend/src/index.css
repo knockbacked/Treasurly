@@ -1,0 +1,225 @@
+/* ----------------------------------------------------------
+   Tailwind Core — Zero-Config Setup
+   ---------------------------------------------------------- */
+
+/* Tailwind’s entire engine (base + components + utilities) */
+@import "tailwindcss";
+
+/* ----------------------------------------------------------
+   Theme Tokens — brand colors, radius, spacing, etc.
+   Define these once, use everywhere via `var(--*)`.
+   ---------------------------------------------------------- */
+  @theme {
+    --color-bg: #0a0a0a;      /* or use var(--color-ink) */
+    --color-fg: #ffffff;
+    --color-accent: #ffe433;  /* same as your gold */
+
+    /* Base brand colors */
+    --color-gold: #ffe433;
+    --color-ink: #0a0a0a;
+    --color-panel: #141414;
+    --color-line: #1f1f1f;
+  
+    /* Supporting tones */
+    --color-soft: #a1a1a1;
+    --color-dim: #6b6b6b;
+    --color-success: #9ccf60;
+    --color-error: #ff5b5b;
+    --color-info: #3fa9f5;
+    --color-warn: #f6c859;
+  
+    /* UI layering */
+    --color-surface-1: #0f0f0f;
+    --color-surface-2: #171717;
+    --color-surface-3: #222222;
+  
+    /* Text tiers */
+    --text-strong: #ffffff;
+    --text-soft: #d4d4d4;
+    --text-dim: #9a9a9a;
+  
+    /* Radii & shadows */
+    --radius-md: 0.625rem;
+    --radius-lg: 1rem;
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.45);
+  }
+  
+
+/* ----------------------------------------------------------
+   Base Layer — normalize + global text & layout defaults
+   ---------------------------------------------------------- */
+@layer base {
+  html,
+  body,
+  #root {
+    /* @apply h-full m-0 p-0; */
+    height: 100%;
+  }
+
+  body {
+    @apply bg-[var(--color-bg)] text-[var(--color-fg)] antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    line-height: 1.6;
+  }
+
+  input, textarea, select {
+    @apply text-[var(--text-soft)] placeholder-[var(--text-dim)] 
+           bg-[var(--color-ink)] border border-[var(--color-line)] 
+           rounded-lg px-4 py-3 outline-none transition;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    @apply border-[var(--color-gold)];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-white tracking-tight;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+
+  p {
+    @apply text-gray-300 leading-relaxed;
+  }
+
+  a {
+    @apply text-[var(--color-accent)] hover:opacity-80 transition-colors;
+  }
+
+  ::selection {
+    @apply bg-[var(--color-accent)]/30;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-[var(--color-accent)]/50 ring-offset-2;
+  }
+
+  /* Scrollbar styling (Chrome, Edge) */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+  }
+}
+
+/* ----------------------------------------------------------
+   Components Layer — reusable UI patterns
+   ---------------------------------------------------------- */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md font-medium
+      transition-colors focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-[var(--color-accent)] text-[var(--color-ink)]
+      hover:bg-yellow-400 focus-visible:ring-[var(--color-accent)];
+  }
+
+  .card {
+    @apply bg-gray-900/50 border border-gray-800 rounded-lg p-6 shadow-lg;
+  }
+}
+
+/* ----------------------------------------------------------
+   Utilities Layer — small one-off helpers
+   ---------------------------------------------------------- */
+   @layer utilities {
+    .hero-screen {
+      min-height: calc(100svh - var(--header-h, 64px));
+      display: flex;
+      align-items: center; /* vertically center hero content */
+    }
+
+    .bg-bg {
+      background-color: var(--color-bg);
+    }
+    .bg-panel {
+      background-color: var(--color-panel);
+    }
+    .bg-line {
+      background-color: var(--color-line);
+    }
+    .bg-gold {
+      background-color: var(--color-gold);
+    }
+  
+    .text-fg {
+      color: var(--color-fg);
+    }
+    .text-strong {
+      color: var(--text-strong);
+    }
+    .text-soft {
+      color: var(--text-soft);
+    }
+    .text-dim {
+      color: var(--text-dim);
+    }
+  
+    .border-line {
+      border-color: var(--color-line);
+    }
+
+    @layer base {
+    /* Smooth in-page scroll for your navbar buttons */
+    html { scroll-behavior: smooth; }
+}
+  }
+
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    15% { transform: rotate(-5deg); }
+    30% { transform: rotate(5deg); }
+    45% { transform: rotate(-4deg); }
+    60% { transform: rotate(4deg); }
+    75% { transform: rotate(-2deg); }
+    90% { transform: rotate(2deg); }
+  }
+  
+  .animate-wobble {
+    animation: wobble 1.2s ease-in-out;
+  }
+  
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.05); }
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+  
+  
+
+/* ----------------------------------------------------------
+   Optional: Dark Mode (if you want an explicit class toggle)
+   ---------------------------------------------------------- */
+/*
+@custom-variant dark (&:is(.dark *));
+@layer base {
+  .dark body {
+    --color-bg: #0b0b0b;
+    --color-fg: #f5f5f5;
+  }
+}
+*/
