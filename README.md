@@ -1,16 +1,15 @@
-# Treasurly: Personal Finance Tracker
+# 🏦Treasurly: Personal Finance Tracker
 
-## 1. Overview
-Many individuals struggle to manage their finances effectively, leading to overspending and limited savings visibility.  
-The **Personal Finance Tracker** is a full-stack web application designed to centralize financial information, automate transaction categorization, and provide users with clear analytics and budgeting insights.  
-It integrates a Spring Boot backend with a React + Vite frontend and a MongoDB Atlas database.
+<br>
 
-_(This project was completed as part of a university group assignment.)_
+## 📦1. Overview
+Many individuals struggle to manage their finances effectively, leading to overspending and limited savings visibility.
 
+The **Personal Finance Tracker** is a full-stack web application designed to centralize financial information, automate transaction categorization, and provide users with clear analytics and budgeting insights. It integrates a Spring Boot backend with a React + Vite frontend and a MongoDB Atlas database.
 
----
+<br>
 
-## 2. System Architecture
+## 🛠2. System Architecture
 The system follows a client–server model with RESTful communication.
 
 - **Frontend:** React (Vite + TypeScript)
@@ -25,9 +24,10 @@ frontend/  → React + Vite interface
 backend/   → Spring Boot REST API + MongoDB integration
 ```
 
----
+<br>
 
-## 3. Libraries and Versions
+
+## 📂3. Libraries and Versions
 
 ### Backend – Spring Boot
 | Library | Version | Purpose |
@@ -39,6 +39,8 @@ backend/   → Spring Boot REST API + MongoDB integration
 | Spring Boot Starter Test | 3.5.5 | Testing utilities |
 | JUnit Platform Launcher | Latest (via dependency) | Test execution |
 | JaCoCo | 0.8.10 | Code coverage reporting |
+
+<br>
 
 ### Frontend – React + Vite
 | Library | Version | Purpose |
@@ -55,42 +57,43 @@ backend/   → Spring Boot REST API + MongoDB integration
 | ESLint / Prettier | ^9.36.0 / ^3.6.2 | Code linting and formatting |
 | Concurrently | ^9.2.0 | Run frontend and backend simultaneously |
 
----
+<br>
 
-## 4. Working Functionalities
+## 🧩4. Working Functionalities
 
-### User Management
+#### a. User Management
 - **Sign Up / Login / Logout** with input validation and session persistence  
 - **Session-based authentication** using `HttpSession`  
 - **Check authentication status** (`/api/users/check`)  
 - **Retrieve current user** (`/api/users/me`)
 
-### Transaction Management
+#### b. Transaction Management
 - **CRUD operations** for transactions (create, read, update, delete)  
 - **Filter by category, type, or user**  
 - **Logging for transaction events**
 
-### Budget Management
+#### c. Budget Management
 - **Create, view, update, and delete budgets**  
 - **Add or remove budget items** with category-based allocations  
 - **Budget summaries by user**
 
-### Category Management
+#### d. Category Management
 - **View, create, update, and delete categories**  
 - **Persistent storage in MongoDB**
 
-### Analytics and Insights
+#### e. Analytics and Insights
 - **Income and expense summaries** per user  
 - **Net balance and projected spending (3-month projection)**  
 - **Aggregated analytics accessible via `/api/analytics/summary`**
 
-### Testing and Coverage
+#### f. Testing and Coverage
 - **JUnit 5 test suite** for controllers and services  
 - **JaCoCo coverage reporting** (HTML report generated at `build/reports/jacocoHtml`)
 
----
 
-## 5. Quick Start Guide
+<br>
+
+## ⚙️5. Quick Start Guide
 
 ### Prerequisites
 - **Java 17+**
@@ -127,9 +130,11 @@ backend/   → Spring Boot REST API + MongoDB integration
 
 > The `dev-unix` and `dev-win` scripts automatically run both frontend and backend concurrently.
 
----
 
-## 6. Deployment Notes
+<br>
+
+
+## 📝6. Deployment Notes
 
 * The database is deployed on **MongoDB Atlas**, providing secure cloud-based data persistence.
 * Environment variables (e.g., MongoDB URI) are defined in `.env` for local and cloud builds.
@@ -140,9 +145,11 @@ backend/   → Spring Boot REST API + MongoDB integration
   ```
 
 
----
 
-## 8. References
+<br>
+
+
+## 🌐8. References
 
 * Spring Boot Documentation: [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
 * React Documentation: [https://react.dev/](https://react.dev/)
@@ -150,4 +157,6 @@ backend/   → Spring Boot REST API + MongoDB integration
 
 ---
 
-**Status:** Functional prototype with ~89% test coverage (verified via JaCoCo)
+**Status:** _Functional prototype with ~89% test coverage (verified via JaCoCo)_
+
+_(This project was completed as part of a university group assignment.)_
